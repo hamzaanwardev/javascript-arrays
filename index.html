@@ -32,6 +32,9 @@
     <h4>shift()</h4>
     <p>shift() removes the first element of an array.</p>
 
+    <h4>indexOf()</h4>
+    <p>it will return the index of our required element.</p>
+
     <script>
         let friends = ['Ahmad', 'Amjad', 'Ali'];
         console.log(friends);
@@ -78,11 +81,24 @@
 
         // Remove Element
         // pop()
-        friends.pop();
+       
+        // if we want to get last removed element than store it in a variable
+        const popped = friends.pop();
+        console.log(`popped: ${popped}`);   //this will return removed element.
         console.log(friends);
+
         // shift()
-        friends.shift();
+        const shifted = friends.shift();
+        console.log(`shifted: ${shifted}`);
         console.log(friends);
+
+
+        // indexOf()
+        const elementIndex = friends.indexOf("Ali");
+        console.log(elementIndex);
+        // BUt if we search for the element that is not present in the array then it will return -1.
+        console.log(friends.indexOf('hamza'));
+
 
     </script>
 </body>
