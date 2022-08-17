@@ -37,6 +37,19 @@
         // we can pass the whole expression as an element in JS. As you can see i have done in the last element of array.
         console.log(me);
         console.log(me.length);
+
+        // Using in a function
+        const calcAge = function (BirthY) {
+            return new Date().getFullYear() - BirthY;
+        }
+        const Years = [1995, 1997, 1998, 2006, 2018];
+        // If we try to pass above whole array from function it will give NaN.
+        console.log(calcAge(Years));
+        // then,
+        console.log(calcAge(Years[2]));
+        // OR if we want to make use multiple elements of an array in a function and make an array
+        const ages = [calcAge(Years[0]), calcAge(Years[2]), calcAge(Years[Years.length - 1])];
+        console.log(ages);
     </script>
 </body>
 </html>
