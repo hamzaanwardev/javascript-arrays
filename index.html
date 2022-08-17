@@ -20,6 +20,11 @@
         <p>we can write it in another way, by using Array method. as you  can  see that there are round brakets with Array this means that it is a function or method. And it is neccessary to to use new keyword with it.</p>
         let friends = new Array('Ahmad', 'Amjad', 'Ali');
     </code>
+    <h2>Arrays Methods</h2>
+    <h4>1- push()</p>
+    <p>push() adss an element at the end of the array.</p>
+    <h4>2 - unshift()</h4>
+    <p>unshift() adds the new element at the beginning of the array.</p>
 
     <script>
         let friends = ['Ahmad', 'Amjad', 'Ali'];
@@ -50,6 +55,20 @@
         // OR if we want to make use multiple elements of an array in a function and make an array
         const ages = [calcAge(Years[0]), calcAge(Years[2]), calcAge(Years[Years.length - 1])];
         console.log(ages);
+
+        // Arrays Methods
+
+        // friends.push('Arslan');
+        // console.log(friends);
+        // It will update the existing array But if we want to store it in another array it will only return the length of new array.
+        const new_friends = friends.push('Arslan');
+        console.log(friends);
+        console.log(`New Friends List; ${new_friends}`);
+
+        // unshift()
+        friends.unshift('Abdullah');
+        console.log(friends);
+        // unshift() methods also do chnages in the existing array
     </script>
 </body>
 </html>
