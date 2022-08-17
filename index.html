@@ -21,10 +21,16 @@
         let friends = new Array('Ahmad', 'Amjad', 'Ali');
     </code>
     <h2>Arrays Methods</h2>
+    <h3>Add Element</h3>
     <h4>1- push()</p>
     <p>push() adss an element at the end of the array.</p>
     <h4>2 - unshift()</h4>
     <p>unshift() adds the new element at the beginning of the array.</p>
+    <h3>Remove Element</h3>
+    <h4>pop()</h4>
+    <p>pop() removes the last element of an array.</p>
+    <h4>shift()</h4>
+    <p>shift() removes the first element of an array.</p>
 
     <script>
         let friends = ['Ahmad', 'Amjad', 'Ali'];
@@ -57,7 +63,7 @@
         console.log(ages);
 
         // Arrays Methods
-
+        // Add element
         // friends.push('Arslan');
         // console.log(friends);
         // It will update the existing array But if we want to store it in another array it will only return the length of new array.
@@ -69,6 +75,15 @@
         friends.unshift('Abdullah');
         console.log(friends);
         // unshift() methods also do chnages in the existing array
+
+        // Remove Element
+        // pop()
+        friends.pop();
+        console.log(friends);
+        // shift()
+        friends.shift();
+        console.log(friends);
+
     </script>
 </body>
 </html>
