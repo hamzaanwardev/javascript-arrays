@@ -17,6 +17,24 @@
         <p>without Array we can store data as you can see above.</p>
         <p>But Arrays make our work easy.</p>
         let friends = ['Ahmad', 'Amjad', 'Ali'];
+        <p>we can write it in another way, by using Array method. as you  can  see that there are round brakets with Array this means that it is a function or method. And it is neccessary to to use new keyword with it.</p>
+        let friends = new Array('Ahmad', 'Amjad', 'Ali');
     </code>
+
+    <script>
+        let friends = ['Ahmad', 'Amjad', 'Ali'];
+        console.log(friends);
+        console.log(friends[0]);
+        // if we want to get last element of the variable then we have to do
+        console.log(friends[friends.length - 1]);
+        // if i want to replace our any element in array. supppose i am want to change secound element of above array to Akbar then,
+        friends[1] = 'Akbar';
+        console.log(friends);
+
+        // Js can store data of different Types
+        let me = ['Muhammad', 'Hamza', 'Anwar', new Date().getFullYear() - 1997];
+        // we can pass the whole expression as an element in JS. As you can see i have done in the last element of array.
+        console.log(me);
+    </script>
 </body>
 </html>
