@@ -35,6 +35,10 @@
     <h4>indexOf()</h4>
     <p>it will return the index of our required element.</p>
 
+    <h4>includes()</h4>
+    <p>includes() will check either our elment is present in the array or not. it will return true if element is present in array and returns false if element is not present in the array.</p>
+    <p>includes() will check with strict equality. if we have 23 number i n array and we search for '23' string then it will return false.</p>
+
     <script>
         let friends = ['Ahmad', 'Amjad', 'Ali'];
         console.log(friends);
@@ -99,7 +103,31 @@
         // BUt if we search for the element that is not present in the array then it will return -1.
         console.log(friends.indexOf('hamza'));
 
+        // includes()
+        console.log(friends.includes('hamza'));
+        console.log(friends.includes('Ali'));
 
+
+
+
+        // Coding Challenge
+        // Tip Calculator
+        let bill = [125, 555, 44];
+        
+        function calcTip(abc) {
+            if (abc >= 50 && abc <= 300) {
+                return (15 * abc) / 100;
+            } else {
+                return (20 * abc) /100;
+            }
+        }
+        console.log(`Tip is ${calcTip(bill[0])}`);
+        let totalBill1 = bill[0] + calcTip(bill[0]);
+        let totalBill2 = bill[1] + calcTip(bill[1]);
+        let totalBill3 = bill[2] + calcTip(bill[2]);
+
+        const Total = [totalBill1, totalBill2, totalBill3];
+        console.log(Total);
     </script>
 </body>
 </html>
